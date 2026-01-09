@@ -5,21 +5,21 @@
 class OrthancCli < Formula
   desc "A powerful command-line interface for managing Orthanc DICOM servers"
   homepage "https://github.com/proencaj/orthanc-cli"
-  version "0.2.2"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.2.2/orthanc-cli-0.2.2-darwin-amd64.tar.gz"
-      sha256 "9a9ab1e40713b0edca124186e52655b078bc0e4ff5b10270e2ee1ee30731a2b8"
+      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.3.0/orthanc-cli-0.3.0-darwin-amd64.tar.gz"
+      sha256 "43e81be856891236ce7bbfd851fbfb8f6847a2f240ceb0ad37d98c5812d37b97"
 
       def install
         bin.install "orthanc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.2.2/orthanc-cli-0.2.2-darwin-arm64.tar.gz"
-      sha256 "316bcd6436d98672be030cf9a02d45e31f432bca556cf21c4346e71364772c9f"
+      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.3.0/orthanc-cli-0.3.0-darwin-arm64.tar.gz"
+      sha256 "a9ac335fbe7005be41efd98980a3e4ffa8cca66698ddad64cd2be2d46ecdfe6f"
 
       def install
         bin.install "orthanc"
@@ -29,15 +29,15 @@ class OrthancCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.2.2/orthanc-cli-0.2.2-linux-amd64.tar.gz"
-      sha256 "da18d3e9cc2c4e0e77468de68ae473924b3233fda12116e3aba73453da2b2d77"
+      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.3.0/orthanc-cli-0.3.0-linux-amd64.tar.gz"
+      sha256 "3a4dde8da226579aab72ae90056df84b2ae83c73d2062f5b03d06c019a699789"
       def install
         bin.install "orthanc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.2.2/orthanc-cli-0.2.2-linux-arm64.tar.gz"
-      sha256 "9ce5cf19f060cf826d12d38a5ab7736e533b060643be2274bf4f3b51c0b47bcf"
+      url "https://github.com/proencaj/orthanc-cli/releases/download/v0.3.0/orthanc-cli-0.3.0-linux-arm64.tar.gz"
+      sha256 "9bd2ed9ee1db13f134f72f3a7865b4614437b8c8dfc8a85b46ff09f41c198f8f"
       def install
         bin.install "orthanc"
       end
